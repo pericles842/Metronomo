@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronomo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caja1">
+        <div class="caja2">
+          <p id="cajaNumeral"> 240 BPM</p>
+        </div>
+        <span> 
+                <input id="barraDeTiempo" type="range"  max="700" min="240" max="700" value="240">
+                <button id="botonUno">Detener</button>
+                <button id="botonDos">Comenzar</button>
+            </span> 
+            <div class="botones">
+                <button id="tresCuartos">3/4</button>
+                <button id="dosCuartos">2/4</button>
+                <button id="seisOctavos">6/8</button>
+            </div>
+            
+      </div>
+      <audio  id="audio "  controls preload="auto">
+        <source type="audio/wav" src="sonidoFx.wav">
+    </audio>
+    <script src="main.js"></script>
+</body>
+</html>
